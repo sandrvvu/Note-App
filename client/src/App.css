@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.title{
+  
+  font-family: 'Dancing Script', cursive;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+html {
+  font-family: 'Inter', sans-serif !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.shadow-custom {
+  box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 2px 4px;
+}
+
+[contenteditable='true']:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.editor p,
+ul,
+li {
+  font-size: 18px;
+}
+
+.ck-editor {
+  background-color: white !important;
+}
+.ck-toolbar {
+  border: none !important;
+  background-color: transparent !important;
+  justify-content: space-around !important;
+}
+.ck-toolbar__items {
+  display: flex !important;
+  justify-content: space-between;
+  width: 90%;
+}
+.ck-editor__editable {
+  border: none !important;
+  max-height: 75vh;
+}
+.ck-editor__editable:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.ck-media__wrapper {
+  width: 50%;
+}
+
+.editor ol {
+  list-style-type: decimal !important;
+  list-style-position: inside;
+}
+
+.editor ul {
+  list-style-type: disc !important;
+  list-style-position: inside;
+}
+
+.note-page h2 {
+  font-size: 1.5rem;
+  line-height: normal;
+}
+
+.note-page h3 {
+  font-size: 1.2rem;
+  line-height: normal;
+}
+
+.note-page h4 {
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.typewriter h1 {
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #8A2BE2; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #8A2BE2 }
+}
+
+.apear {
+  transform: translateX(-150%);
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {transform: translateX(-150%);}
+  100% {transform: translateY(0);}
+}
